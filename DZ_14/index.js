@@ -34,26 +34,25 @@ console.log(randomNumber);
   f1()
  });
 
-
  function f1() {
 
-  let get = +input.value 
+  let getValue = +input.value 
   
-   if (get == randomNumber) {
-     p2.innerText = 'Вы угадали Количество попыток:', caunter+1 ;
+   if (getValue == randomNumber) {
+     p2.innerText = 'Вы угадали!!!';
      caunter += 1
-    p3.innerText = caunter 
+     p3.innerText = 'Количесво попыток:' + caunter
      
    } 
-   else if (get > randomNumber) {
+   else if (getValue > randomNumber) {
     p2.innerText = 'Вы ввели число больше чем нужно попробуйте еще раз';
      caunter += 1
-     p3.innerText = 'Количесво:' + caunter
+     p3.innerText = 'Количесво попыток:' + caunter
    }
-   else if (get < randomNumber)  {
-    p2.innerText ='Вы ввели число меньше чем нужно попробуйте еще раз ';
+   else if (getValue < randomNumber)  {
+    p2.innerText ='Вы ввели число меньше чем нужно, попробуйте еще раз ';
     caunter += 1
-  
+    p3.innerText = 'Количесво попыток:' + caunter
    }
   }
 
