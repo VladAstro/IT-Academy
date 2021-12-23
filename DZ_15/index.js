@@ -30,7 +30,7 @@ users.forEach(({name, age}, index) => {
   p.onclick = () => {
     users.splice(index, -1)
     body.removeChild(p)
-    
   }
+  
  body.appendChild(p)
 });
