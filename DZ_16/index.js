@@ -5,5 +5,5 @@ btn.onclick = () => {
     window.location = 'home/home.html';
     return;
   }
-  window.location = 'auth/auth.html'
+  window.location = 'auth/auth.html';
 }

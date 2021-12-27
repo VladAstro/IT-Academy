@@ -6,9 +6,8 @@ const inp_last = document.getElementById('inp_last');
  const users = {
    firstName:inp_first.value,
    lastName:inp_last.value
- }
- localStorage.setItem('person', JSON.stringify(users) );
+ };
+ localStorage.setItem('person', JSON.stringify(users));
 
  window.location = '../home/home.html';
 }
-
