@@ -10,4 +10,4 @@ const inp_last = document.getElementById('inp_last');
  localStorage.setItem('person', JSON.stringify(users));
 
  window.location = '../home/home.html';
-}
+};

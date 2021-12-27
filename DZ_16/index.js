@@ -6,4 +6,4 @@ btn.onclick = () => {
     return;
   }
   window.location = 'auth/auth.html';
-}
+};
