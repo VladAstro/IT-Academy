@@ -1,0 +1,44 @@
+.main-wrapper {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.main-wrapper_title {
+  margin-bottom: 20px;
+}
+
+.main-wrapper_submit-btn {
+  margin-top: 20px;
+}
+
+.main-wrapper_todos {
+  margin-top: 10px;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.main-wrapper_todos_container {
+  background-color: black;
+}
+
+.header{
+  background-image: url('/components/header/img/logo_black2.jpg.png.jpg');
+  height: 50px;
+  border-bottom: 2px solid #000;
+}
+
+.footer {
+  height: 100px;
+  background-color: green;
+  border-top: 2px solid #000;
+}
+
+.wrapper {
+  border: 3px solid black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
