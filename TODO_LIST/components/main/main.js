@@ -16,15 +16,13 @@ const initApplication = () => {
 }
 
 submit_todo_btn.onclick = () => {
-
   const todo = {
     title: todo_title_input.value,
     description: todo_description_text_area.value
   };
-
   const existingTodos = JSON.parse(localStorage.getItem('todos')) || [];
-  existingTodos.push(todo)
 
+  existingTodos.push(todo)
   localStorage.setItem('todos', JSON.stringify(existingTodos));
   title_container.innerText = todo.title;
   description_container.innerText = todo.description;
