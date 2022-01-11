@@ -42,3 +42,20 @@
   justify-content: space-between;
 }
 
+.todo__item {
+  position: relative;
+  padding: 10px;
+}
+
+.todo__item_remove_btn {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.todo__item-description {
+  margin-bottom: 0;
+}
+

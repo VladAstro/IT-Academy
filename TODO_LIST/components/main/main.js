@@ -2,37 +2,32 @@ const submit_todo_btn = document.getElementById('submit_todo');
 const todo_title_input = document.getElementById('todo_title');
 const todo_description_text_area = document.getElementById('todo_description');
 const todos_container = document.querySelector('.main-wrapper_todos')
+const title_container = document.querySelector('#title_container')
+const description_container = document.querySelector('#description_container')
 const todos = [];
 
-
 const initApplication = () => {
-  if (!localStorage.getItem('todos')) { 
-    localStorage.setItem('todos', JSON.stringify([]));
+  const existingTodos = JSON.parse(localStorage.getItem('todos')) || [];
+
+  if (existingTodos[existingTodos.length -1].title && existingTodos[existingTodos.length -1].description) { 
+    title_container.innerText = existingTodos[existingTodos.length -1].title;
+    description_container.innerText = existingTodos[existingTodos.length -1].description;
   } 
-  else if (  localStorage.setItem('todos', JSON.stringify(existingTodos))) {
-    todos_container =  localStorage.getItem('todos', onload(todos))
-  }
-};
+}
 
 submit_todo_btn.onclick = () => {
-  const existingTodos = JSON.parse(localStorage.getItem('todos')) || [];
-  const todo_container = document.createElement('div');
-  const todo_title = document.createElement('h3');
-  const todo_description = document.createElement('p');
+
   const todo = {
     title: todo_title_input.value,
     description: todo_description_text_area.value
   };
 
+  const existingTodos = JSON.parse(localStorage.getItem('todos')) || [];
   existingTodos.push(todo)
 
   localStorage.setItem('todos', JSON.stringify(existingTodos));
-  // todo_container.className('main-wrapper_todos_container',);
-  todo_title.innerText = todo.title;
-  todo_description.innerText = todo.description;
-
-  todo_container.append(todo_title, todo_description);
-  todos_container.append(todo_container);
+  title_container.innerText = todo.title;
+  description_container.innerText = todo.description;
 };
 
 const getInputs = () => {
@@ -52,5 +47,3 @@ todo_description_text_area.oninput = () => {
 };
 
 initApplication();
-
-
