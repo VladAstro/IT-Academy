@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;500;700&display=swap');
+
+
+
+body, a {
+  margin: 0;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  /* height: 100vh; */
+  justify-content: space-between;
+  /* background-image: url('/img/logo_white2_Монтажная\ область\ 1.jpg'); */
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;
+  background-color: #040404;
+
+}
+
+.header {
+  height: 1000px;
+  background-color: red;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 30px;
+  border: 1px solid white;
+  margin: 10px;
+  background-image: url('/img/Шапка\ Влад\ Ютуб.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.headerbtn {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  height: 35px;
+  background: #247FFF;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  margin-top: 37px;
+}
+
+.laudtext {
+
+}
+
+.top-menu {
+  display: flex;
+  width: 850px;
+  height:  80px;
+  /* float:left; */
+}
+
+.top-menu ul li {
+  list-style: none;
+  float: left;
+  text-align: left;
+}
+
+.top-menu ul li a {
+  display: block;
+  width: 171px;
+  text-decoration: underline;
+  font-family: 'Oswald', sans-serif;
+  font-size:17px;
+  color: white;
+  padding-top: 25px;
+  cursor: pointer;
+}
+
+/* .cartinks {
+  
+  height: 100px;
+} */
+
+.header_btns button:hover {
+  border: 2px solid white;
+}
+
+.header_btns button {
+  margin: 27px;
+  height: 50px;
+  width: 150px;
+  background-color: #545454;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.footer {
+  height: 300px;
+  border-top: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.footer_label {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.main {
+  opacity: 0.9;
+  height:1000px;
+  margin: 0 -10px;
+  display: flex;
+  justify-content: space-between;
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  box-shadow: 21px 3px 11px -12px rgba(119, 129, 61, 1);
+
+}
+
+.navigation {
+ 
+  width: 200px;
+  margin-left: 100px;
+  padding: 10px;
+  background-color: rgb(255 255 255 / 18%);
+  border-radius: 10px;
+  
+ 
+}
+
+.content {
+  width: 50%;
+  /* overflow-y: scroll; */
+  background-color: rgb(255 255 255 / 18%);
+  border-radius: 10px;
+}
+
+.filter {
+ 
+  width: 200px;
+  margin-right: 100px;
+  background-color: rgb(255 255 255 / 18%);
+  border-radius: 10px;
+  box-shadow: 21px 3px 11px -12px rgba(119, 129, 61, 1);
+}
+
+.feedback {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+ 
+}
+
+.checkbox_inputs {
+  margin: 10px, 0;
+}
+
+#feedback_label {
+  margin: 0;
+}
+
+.text_wraper {
+  height: 95%;
+  overflow-y: scroll;
+  margin: 10px;
+}
+
+.text_inputs {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.filter_input {
+  width: 100%;
+
+}
+
+.filters_button {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 50px;
+}
+
+.filters_button:hover {
+  box-shadow: -1px 4px 8px 11px rgba(182, 23, 23, 0.2);
+} 
+
+.lofo{
+  width: 70%;
+  height: 70%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+@media(max-width: 1400px) {
+.wrapper{
+  height: fit-content;
+}
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .navigation {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    border-radius: 20px;
+  }
+
+  .navigation p {
+    margin: 20px;
+   
+  }
+
+  .content {
+    width: 100%;
+    margin: 20px 0;
+    height: 300px;
+  }
+
+  .filter {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+    margin-right: auto;
+    border-radius: 20px;
+  }
+
+  .checkbox_inputs {
+    margin: 10px 37px;
+
+  }
+}
+
